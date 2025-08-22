@@ -54,9 +54,22 @@ This project predicts whether or not a team will win for all matches in the seco
 
 ---
 
+## Next Steps
+
+- **Incorporate Opposition Rolling Averages:** Add rolling statistics for opponents (e.g., goals scored/conceded, win %), and relative features comparing team vs. opponent form.  
+- **Experiment with Alternative Models:** Try other non-linear models such as Gradient Boosting (XGBoost, LightGBM, CatBoost) for potentially improved accuracy.  
+- **Hyperparameter Tuning:** Apply grid search or Bayesian optimization to improve model performance.  
+- **Model Interpretation:** Use feature importance and SHAP values to understand the key drivers of predictions.  
+- **Time-Aware Validation:** Implement walk-forward or rolling validation to better simulate real-world prediction scenarios.  
+- **Probability Calibration:** Calibrate predicted probabilities for more reliable win likelihood estimates.  
+
+--- 
+
 ## File Overview
 
 - [matches.csv](matches.csv): Historical match data for the EFL Championship.
 - [match_predictions.ipynb](match_predictions.ipynb): Main notebook with all data processing, modeling, and analysis.
 - [banner.png](banner.png): Project logo for the README file.
 - [README.md](README.md): Project documentation and usage instructions.
+
+
